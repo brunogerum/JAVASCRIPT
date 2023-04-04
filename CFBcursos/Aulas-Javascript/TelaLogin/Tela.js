@@ -13,4 +13,10 @@ const callback_naook=()=>{
     Cxmsg.mostrar(config,"ERRO","Usuario ou senha incorretos")
 }
 
-Login.login(callback_ok,callback_naook);
+const configlogin={
+    cor: "#048",
+    img: "./logo.png",
+    endpoint:"https://loginv1.brunogerum.repl.co"
+}
+
+Login.login(callback_ok,callback_naook,configlogin);
