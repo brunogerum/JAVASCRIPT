@@ -130,7 +130,7 @@ class Login {
         let mat = document.querySelector("#f_username").value;
         let pas = document.querySelector("#f_senha").value;
 
-        const endpoint = `${this,config.endpoint}/?matricula=${mat}&senha=${pas}`
+        const endpoint = `${this.config.endpoint}/?matricula=${mat}&senha=${pas}`
         fetch(endpoint)
             .then(res => res.json())
             .then(res => {
