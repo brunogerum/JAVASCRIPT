@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+body {
+    background-color: #4e6dcab6;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1em;
+}
+header {
+    color: white;
+    margin: auto;
+    width: 400px;
+    text-align: center;
+}
+main {
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px black;
+    width: 400px;
+    margin: auto;
+}
+
+img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    }
+
+footer {
+    color: white;
+    margin: auto;
+    width: 400px;
+    text-align: center;
+}

@@ -1,0 +1,62 @@
+.item{
+    margin: 5px;
+    padding: 5px;
+    background: #447;
+    text-align: center;
+    font-size: 1em;
+    color: #fff;
+    width: 200px;
+    /* height: 30px; */
+    /* width: calc(33.333333% - 20px); */
+
+flex-grow: 1;/*é aplicado no item, e começa por padrao = 0 e
+ 1, 2 3 aumentam o tamanho do item de acordo com o indicado 
+
+ acompanham o tamanho do item para ocupar a linha inteira
+
+ e o justify content nao tem nenhuma ação quando usa o flex grow */
+
+ flex-basis: 0;/* faz o flex grow mas nao acompanha o tamanho do texto quando no 0 - faz o tamanho base ser igual*/
+
+ order: 1; /*tem que botar o order ou numa classe e botar cada div uma diferente para poder mudar a ordem, ou fazer inline- style*/
+
+ flex-shrink: 1;/*capacidade de ser reduzido ou nao no 1 eles reduzem para caber no container, se colocar 0 nao reduz*/
+
+ flex: auto; /*é um atalho para as propriedades grow e shrink e flex-basis - 0 - 1 - auto é o padrao respecivamente*/
+
+
+ align-self: center; /*botar em apenas 1 item para mudar o lugar dele na linha*/
+}
+
+.container{
+    
+    max-width: 600px;
+    height: 400px;
+    margin: auto;
+    border:  1px solid #000;
+    display: flex; /*deixa flexivel e coloca na direção de linha cartesiana na horizontal*/
+    flex-direction: row;/*por padrao ele é row, entao não muda - se colocar column ele vai de cima pra baixo. O reverse funciona na mesma ideia*/
+    flex-wrap: nowrap;/*padrão: no-wrap - define quebra de linha do container, se pode quebrar ou não
+    no wrap os  ultimos conteudos que nao coberem na linha, vao pra linha de baixo pra caber.
+     no wrap reverse são os ultimos conteudos que vao pra linah de cima, e os primeiros pralinha de baixo - fnciona como se fosse um column reverse*/
+     flex-flow: row ;/*junta flex direction e flex wrap como se fosse uma propriedade só - só serve para row ou row reverse*/
+     justify-content:center;/* EIXO PRINCIPAL  HORIZONTAL alinha os elementros dentro do container
+     -flex-start - é o padrão começa a contar do começo do flex
+     -flex-end - começa a contar do final do flex
+     - center - fica no centro do eixo principal
+     - space-between - faz o espaçamento igual para todos os itens, mas o primeiro elemento no flex-start e o ultimo no flex end " eles ficam grudados sem espaços nas pontas"
+     -space-around - distribui igualmente e não gruda nas pontas
+     */
+    align-items: center;/* EIXO PRINCIPAL É O VERTICAL parecido com justify-content, mas trabalho num eixo diferente
+    -stretch é o item ocupando todo o tamanho mas a prioridade é altura do elemento se ele for declarado
+    -baseline é a base linha, costuma-se ser igual o flex-start
+    - usar o calc pra deixar todo o conteiner preenchido: 
+    - flex-start*/ 
+    align-content: center; /*trabalham no mesmo eixo semelhante ao aling itens mas fica sem espamento vertical entre as linhas da coluna*/
+   
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000;
+}

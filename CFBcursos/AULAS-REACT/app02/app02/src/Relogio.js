@@ -1,0 +1,11 @@
+import React from "react";
+
+export default function Relogio(){
+    return(
+        <>
+            <p>
+                {new Date().toLocaleString()}
+            </p>
+        </>
+    )
+}

@@ -1,0 +1,13 @@
+.numero{
+    padding: 5px;
+    margin: 5px;
+    font-size: larger;
+}
+
+.ok{
+    color: #00f;
+}
+
+.erro{
+    color: #f00;
+}
