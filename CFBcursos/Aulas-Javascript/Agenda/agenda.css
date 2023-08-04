@@ -1,0 +1,100 @@
+*{
+    border: none;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.cabecalho{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.menu{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+.principal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ddd;
+    width: 100%;
+    height: 93vh;
+}
+.aba{
+    background-color: #aaa;
+    color: #248;    
+    text-transform: uppercase;
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 10px 10px 0px 0px;
+    margin-right: 1px;
+}
+.abaSelecionada{
+
+    background-color: #248;
+    color: #fff;
+}
+
+.aba:hover{
+    background-color: #248;
+    color: #fff;
+    transform: scale(1.1);
+    transition: 0.1ms;
+}
+
+#if_principal{
+    border:  1px solid #f00;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;/* para oculatr a barra de rolagem*/
+}
+
+/*CSS DA PAG NOVO*/
+
+.elementosForm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.camposForm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 5px;
+}
+.camposForm input{
+padding: 5px;
+margin: 5px;
+}
+
+.camposForm label{
+margin-right: 15px;
+}
+
+.botoesForm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.botoesForm button{
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    background-color: #248;
+    color: #fff;
+    cursor: pointer;
+
+}
